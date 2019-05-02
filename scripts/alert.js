@@ -10,6 +10,7 @@ const resultKod = document.querySelector('.resultKod');
     const fiveYear = 5*364;
     const sevenYear = 7*364;
 
+/** Определение кода ! НАЧАЛО */
 function Kod() {
   let choicetypeEngine = typeEngine.value;
   let choicecapacityEngine = capacityEngine.value;
@@ -183,4 +184,6 @@ function Kod() {
             
     }
 }
+/** Определение кода ! КОНЕЦ */
+
 submitKod.addEventListener('click', Kod);
