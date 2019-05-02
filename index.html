@@ -5,19 +5,26 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="scripts/alert.js" defer></script>
   </head>
   <body>
-    <header>
-header
-    </header>
-   
+    <header></header>
     <main>
-main
+        <h3>Определение кода</h3>
+        
+        <label for="typeEngine">Тип двигателя</label>
+        <select id="typeEngine" class="typeEngine">
+          <option value="diesel" class="diesel">Дизель</option>
+          <option value="petrol" class="petrol">Бензин</option>
+        </select>
+        
+        <label>Объем двигателя<input type="number" class="capacityEngine" required></label>
+        
+        <label>Год выпуска<input type="date" class="dateCar" required></label>
+        
+        <input type="submit" value="Определить" class="submitKod">
+    
+        <p class="resultKod"></p>
     </main>
-   
-    <footer>
-footer
-    </footer>
-
   </body>
 </html>

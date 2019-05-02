@@ -1,21 +1,23 @@
-html, body {
-    height: 100%;
+html {
+    font-family: sans-serif;
+       
+  }
+
+body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
+    justify-items: center;
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 50px auto;
+  }
+  .lastResult {
+    color: white;
+    padding: 3px;
+  }h1, p {
+      margin: 15px;
+  }
 
-
-header {
-    height: 40px;
-    border-bottom: 0.3px solid gray;
-}
-
-main {
-
-}
-
-footer {
-    height: 40px;
-    border-top: 0.3px solid gray;
-}
