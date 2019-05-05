@@ -14,21 +14,40 @@
     </header>
    
     <main>
-        <h3>Определение кода</h3>
-        
-        <label for="typeEngine">Тип двигателя</label>
-        <select id="typeEngine" class="typeEngine">
-          <option value="diesel" class="diesel">Дизель</option>
-          <option value="petrol" class="petrol">Бензин</option>
-        </select>
-        
-        <label>Объем двигателя<input type="number" class="capacityEngine" required></label>
-        
-        <label>Год выпуска<input type="date" class="dateCar" required></label>
-        
-        <input type="submit" value="Определить" class="submitKod">
-    
-        <p class="resultKod"></p>
+      <sidebar class="leftSidebar">
+      
+      </sidebar>
+      <section class="detailCar">  
+        <h4>Характеристики транспортного средства</h4>    
+        <div class="detailField">
+          <label for="dateCar">Год выпуска</label>
+          <input id="dateCar" type="date" class="dateCar" required></label>
+        </div>  
+        <div class="detailField">
+          <label for="typeEngine">Тип двигателя</label>
+          <select id="typeEngine" class="typeEngine">
+            <option value="diesel" class="diesel">Дизель</option>
+            <option value="petrol" class="petrol">Бензин</option>
+          </select>
+        </div>
+        <div class="detailField">
+          <label for="capacityEngine">Объем двигателя</label>
+          <input id="capacityEngine" type="number" class="capacityEngine" required>
+        </div>
+      </section>
+      
+      <section class="outputField">
+        <div class="resultField">
+          <input type="submit" value="Определить код" class="submitKod">
+          <p class="resultKod"></p>
+
+        </div>
+      </section>
+      
+      <sidebar class="rightSidebar">
+
+      </sidebar>
+
     </main>
    
     <footer>

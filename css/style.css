@@ -1,9 +1,11 @@
 html, body {
   font-family: sans-serif;
+  font-size: 1em;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: rgb(233, 225, 225);
 }
 
 header {
@@ -12,7 +14,7 @@ header {
   justify-content: space-between;
   height: 7%;
   margin: 5px;
-  border-bottom: 0.5px solid rgb(197, 191, 191);
+  border-bottom: 0.5px solid rgb(136, 133, 133);
 }
 
 header .logo {
@@ -24,7 +26,80 @@ header .logo {
 
 main {
   flex-grow: 2;
-  margin: 5px;
+  display: flex;
+  
+
+}
+
+main .leftSidebar  {
+  height: 100%;
+  flex-grow: 1;
+  border-right: 0.5px solid rgb(136, 133, 133);
+}
+
+main .detailCar {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  margin: 10px 15px;
+  padding: 10px;
+  border: 0.5px solid rgb(136, 133, 133);
+  border-radius: 5%;
+  background-color:  rgb(248, 233, 233);  
+}
+
+main h4 {
+  margin: 5px 0px 15px 0px;
+  align-self: center;
+}
+
+main .detailCar .detailField {
+  margin: 10px 5px;
+}
+
+main .outputField {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+  margin: 10px 15px;
+  padding: 20px 10px;
+  border: 0.5px solid rgb(136, 133, 133);
+  border-radius: 5%;
+  background-color: rgb(248, 233, 233);
+}
+
+main .outputField .resultField {
+  display: flex;
+  align-items: center;
+  height: 15%;
+  width: 600px;
+  margin: 10px 5px;
+}
+
+main .outputField .submitKod {
+  font-size: 1.1em;
+  height: 50%;
+  width: 40%;
+}
+
+main .outputField .resultKod {
+  font-size: 1.5em;
+  height: 70%;
+  width: 60%;
+  margin: 15px;
+  border: 0.5px solid rgb(243, 160, 160);
+  border-radius: 10%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+main .rightSidebar  {
+  height: 100%;
+  flex-grow: 1;
+  border-left: 0.5px solid rgb(136, 133, 133);
 }
 
 footer {
@@ -33,7 +108,7 @@ footer {
   justify-content: end;
   height: 5%;
   margin: 5px 15px;
-  border-top: 0.5px solid rgb(197, 191, 191);
+  border-top: 0.5px solid rgb(136, 133, 133);;
 }
 
  
